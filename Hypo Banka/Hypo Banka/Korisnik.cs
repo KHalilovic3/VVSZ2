@@ -108,7 +108,13 @@ namespace Hypo_Banka
         /// </summary>
         public Tuple<string, string> AutomatskoGenerisanjePodataka()
         {
-            throw new NotImplementedException();
+            if (Ime == null || Prezime == null)
+            {
+                throw new ArgumentException("Ime ili prezime je neispravno!!");
+            }
+            KorisnickoIme = Ime.Substring(0, 1) + Prezime + "1";
+            Lozinka = KorisnickoIme;
+            return new Tuple<string, string>(KorisnickoIme, Lozinka);
         }
 
         #endregion
