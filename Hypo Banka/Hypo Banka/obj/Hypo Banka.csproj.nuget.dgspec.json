@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\D\\Ehlimana\\Documents\\VVS\\Zadaća br. 2 (Unit Testiranje)\\Grupa 5\\Hypo Banka\\Hypo Banka\\Hypo Banka.csproj": {}
+    "C:\\Users\\Lejla\\Source\\Repos\\KHalilovic3\\VVSZ2\\Hypo Banka\\Hypo Banka\\Hypo Banka.csproj": {}
   },
   "projects": {
-    "D:\\D\\Ehlimana\\Documents\\VVS\\Zadaća br. 2 (Unit Testiranje)\\Grupa 5\\Hypo Banka\\Hypo Banka\\Hypo Banka.csproj": {
+    "C:\\Users\\Lejla\\Source\\Repos\\KHalilovic3\\VVSZ2\\Hypo Banka\\Hypo Banka\\Hypo Banka.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\D\\Ehlimana\\Documents\\VVS\\Zadaća br. 2 (Unit Testiranje)\\Grupa 5\\Hypo Banka\\Hypo Banka\\Hypo Banka.csproj",
+        "projectUniqueName": "C:\\Users\\Lejla\\Source\\Repos\\KHalilovic3\\VVSZ2\\Hypo Banka\\Hypo Banka\\Hypo Banka.csproj",
         "projectName": "Hypo Banka",
-        "projectPath": "D:\\D\\Ehlimana\\Documents\\VVS\\Zadaća br. 2 (Unit Testiranje)\\Grupa 5\\Hypo Banka\\Hypo Banka\\Hypo Banka.csproj",
-        "packagesPath": "C:\\Users\\Ehlimana\\.nuget\\packages\\",
-        "outputPath": "D:\\D\\Ehlimana\\Documents\\VVS\\Zadaća br. 2 (Unit Testiranje)\\Grupa 5\\Hypo Banka\\Hypo Banka\\obj\\",
+        "projectPath": "C:\\Users\\Lejla\\Source\\Repos\\KHalilovic3\\VVSZ2\\Hypo Banka\\Hypo Banka\\Hypo Banka.csproj",
+        "packagesPath": "C:\\Users\\Lejla\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lejla\\Source\\Repos\\KHalilovic3\\VVSZ2\\Hypo Banka\\Hypo Banka\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Ehlimana\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Lejla\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -52,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

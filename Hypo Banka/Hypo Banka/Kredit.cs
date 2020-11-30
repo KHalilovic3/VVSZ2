@@ -96,11 +96,12 @@ namespace Hypo_Banka
         /// XX %."
         /// </summary>
         /// <returns></returns>
-        public string ProvjeriStanjeOtplate()
 
+        public string  ProvjeriStanjeOtplate() 
         {
-            throw new NotImplementedException();
+            return "Preostali iznos novca kojeg treba vratiti" + iznos * Math.Pow((1 + kamatnaStopa), rokOtplate.Year - 2020);
         }
+
 
         #endregion
     }
