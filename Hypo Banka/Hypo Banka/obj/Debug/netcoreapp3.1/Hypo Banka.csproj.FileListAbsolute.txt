@@ -1,0 +1,18 @@
+C:\Users\Ehlimana\Desktop\r\5\Hypo Banka\Hypo Banka\bin\Debug\netcoreapp3.1\Hypo Banka.deps.json
+C:\Users\Ehlimana\Desktop\r\5\Hypo Banka\Hypo Banka\bin\Debug\netcoreapp3.1\Hypo Banka.dll
+C:\Users\Ehlimana\Desktop\r\5\Hypo Banka\Hypo Banka\bin\Debug\netcoreapp3.1\Hypo Banka.pdb
+C:\Users\Ehlimana\Desktop\r\5\Hypo Banka\Hypo Banka\obj\Debug\netcoreapp3.1\Hypo Banka.csprojAssemblyReference.cache
+C:\Users\Ehlimana\Desktop\r\5\Hypo Banka\Hypo Banka\obj\Debug\netcoreapp3.1\Hypo Banka.AssemblyInfoInputs.cache
+C:\Users\Ehlimana\Desktop\r\5\Hypo Banka\Hypo Banka\obj\Debug\netcoreapp3.1\Hypo Banka.AssemblyInfo.cs
+C:\Users\Ehlimana\Desktop\r\5\Hypo Banka\Hypo Banka\obj\Debug\netcoreapp3.1\Hypo Banka.csproj.CoreCompileInputs.cache
+C:\Users\Ehlimana\Desktop\r\5\Hypo Banka\Hypo Banka\obj\Debug\netcoreapp3.1\Hypo Banka.dll
+C:\Users\Ehlimana\Desktop\r\5\Hypo Banka\Hypo Banka\obj\Debug\netcoreapp3.1\Hypo Banka.pdb
+D:\D\Ehlimana\Documents\VVS\Zadaća br. 2 (Unit Testiranje)\Grupa 5\Hypo Banka\Hypo Banka\bin\Debug\netcoreapp3.1\Hypo Banka.deps.json
+D:\D\Ehlimana\Documents\VVS\Zadaća br. 2 (Unit Testiranje)\Grupa 5\Hypo Banka\Hypo Banka\bin\Debug\netcoreapp3.1\Hypo Banka.dll
+D:\D\Ehlimana\Documents\VVS\Zadaća br. 2 (Unit Testiranje)\Grupa 5\Hypo Banka\Hypo Banka\bin\Debug\netcoreapp3.1\Hypo Banka.pdb
+D:\D\Ehlimana\Documents\VVS\Zadaća br. 2 (Unit Testiranje)\Grupa 5\Hypo Banka\Hypo Banka\obj\Debug\netcoreapp3.1\Hypo Banka.csprojAssemblyReference.cache
+D:\D\Ehlimana\Documents\VVS\Zadaća br. 2 (Unit Testiranje)\Grupa 5\Hypo Banka\Hypo Banka\obj\Debug\netcoreapp3.1\Hypo Banka.AssemblyInfoInputs.cache
+D:\D\Ehlimana\Documents\VVS\Zadaća br. 2 (Unit Testiranje)\Grupa 5\Hypo Banka\Hypo Banka\obj\Debug\netcoreapp3.1\Hypo Banka.AssemblyInfo.cs
+D:\D\Ehlimana\Documents\VVS\Zadaća br. 2 (Unit Testiranje)\Grupa 5\Hypo Banka\Hypo Banka\obj\Debug\netcoreapp3.1\Hypo Banka.csproj.CoreCompileInputs.cache
+D:\D\Ehlimana\Documents\VVS\Zadaća br. 2 (Unit Testiranje)\Grupa 5\Hypo Banka\Hypo Banka\obj\Debug\netcoreapp3.1\Hypo Banka.dll
+D:\D\Ehlimana\Documents\VVS\Zadaća br. 2 (Unit Testiranje)\Grupa 5\Hypo Banka\Hypo Banka\obj\Debug\netcoreapp3.1\Hypo Banka.pdb
