@@ -78,8 +78,32 @@ namespace Hypo_Banka
         /// </summary>
         /// <param name="r"></param>
         public double DajUkupanIznosNovcaNaSvimRačunima()
-        {
-            throw new NotImplementedException();
+        {   if (racuni.Count == 0)
+            {
+                throw new ArgumentException("Klijent nema nijedan račun!");
+            }
+
+            int cblock = 0;
+            double stanje = 0;
+            foreach (var racun in racuni)
+            {
+                if (racun.Blokiran == true)
+                {
+                    cblock++;
+                }
+
+                else
+                {
+                    stanje=stanje+racun.StanjeRacuna;
+                }
+            }
+            
+            if (cblock == racuni.Count)
+            {
+                throw new ArgumentException("Klijentu su svi računi blokirani!");
+            }
+
+            return stanje;
         }
 
         public bool SkiniIznosSaNekogOdRačuna(double ukupniIznos)
