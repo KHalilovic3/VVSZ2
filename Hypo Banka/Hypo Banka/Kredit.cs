@@ -100,7 +100,9 @@ namespace Hypo_Banka
 
         {
             return "Kredit koji se treba vratiti najkasnije na dan" + rokOtplate.Day + "." + rokOtplate.Month + "." + rokOtplate.Year + ". godine ima preostali iznos od "
-                + iznos * Math.Pow((1 + kamatnaStopa), rokOtplate.Year - 2020) + " KM. Iznos rate je " + rata + " KM, po stopi od " + kamatnaStopa * 100 + "%.";
++ iznos * Math.Pow((1 + kamatnaStopa), rokOtplate.Year - 2020) + " KM. Iznos rate je " + rata + " KM, po stopi od " + kamatnaStopa * 100 + "%.";
+
+
         }
 
         #endregion

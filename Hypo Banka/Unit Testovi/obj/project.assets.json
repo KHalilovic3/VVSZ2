@@ -5732,19 +5732,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Ehlimana\\.nuget\\packages\\": {}
+    "C:\\Users\\kerim\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\D\\Ehlimana\\Documents\\VVS\\Zadaća br. 2 (Unit Testiranje)\\Grupa 5\\Hypo Banka\\Unit Testovi\\Unit Testovi.csproj",
+      "projectUniqueName": "C:\\Users\\kerim\\Source\\Repos\\KHalilovic3\\VVSZ2\\Hypo Banka\\Unit Testovi\\Unit Testovi.csproj",
       "projectName": "Unit Testovi",
-      "projectPath": "D:\\D\\Ehlimana\\Documents\\VVS\\Zadaća br. 2 (Unit Testiranje)\\Grupa 5\\Hypo Banka\\Unit Testovi\\Unit Testovi.csproj",
-      "packagesPath": "C:\\Users\\Ehlimana\\.nuget\\packages\\",
-      "outputPath": "D:\\D\\Ehlimana\\Documents\\VVS\\Zadaća br. 2 (Unit Testiranje)\\Grupa 5\\Hypo Banka\\Unit Testovi\\obj\\",
+      "projectPath": "C:\\Users\\kerim\\Source\\Repos\\KHalilovic3\\VVSZ2\\Hypo Banka\\Unit Testovi\\Unit Testovi.csproj",
+      "packagesPath": "C:\\Users\\kerim\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\kerim\\Source\\Repos\\KHalilovic3\\VVSZ2\\Hypo Banka\\Unit Testovi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Ehlimana\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\kerim\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5756,9 +5756,10 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\D\\Ehlimana\\Documents\\VVS\\Zadaća br. 2 (Unit Testiranje)\\Grupa 5\\Hypo Banka\\Hypo Banka\\Hypo Banka.csproj": {
-              "projectPath": "D:\\D\\Ehlimana\\Documents\\VVS\\Zadaća br. 2 (Unit Testiranje)\\Grupa 5\\Hypo Banka\\Hypo Banka\\Hypo Banka.csproj"
+            "C:\\Users\\kerim\\Source\\Repos\\KHalilovic3\\VVSZ2\\Hypo Banka\\Hypo Banka\\Hypo Banka.csproj": {
+              "projectPath": "C:\\Users\\kerim\\Source\\Repos\\KHalilovic3\\VVSZ2\\Hypo Banka\\Hypo Banka\\Hypo Banka.csproj"
             }
           }
         }
@@ -5771,6 +5772,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "MSTest.TestAdapter": {
             "target": "Package",
@@ -5804,7 +5806,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
