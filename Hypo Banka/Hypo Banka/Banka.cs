@@ -75,7 +75,7 @@ namespace Hypo_Banka
         /// </summary>
         public List<Klijent> KlijentiSBlokiranimRačunima()
         {
-            List<Klijent> klijents;
+            List<Klijent> klijents = new List<Klijent>();
             foreach (Klijent k in klijenti) 
                 {
                     var suma = 0;
@@ -85,6 +85,8 @@ namespace Hypo_Banka
                         break;
                     }
                 }
+            if (klijents.Count == 0) throw new InvalidOperationException("Nema nijedan klijent sa blokiranim računom");
+
             return klijents;
         }
 
