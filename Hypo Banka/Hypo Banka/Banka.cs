@@ -75,17 +75,7 @@ namespace Hypo_Banka
         /// </summary>
         public List<Klijent> KlijentiSBlokiranimRačunima()
         {
-            List<Klijent> klijents;
-            foreach (Klijent k in klijenti) 
-                {
-                    var suma = 0;
-                    foreach (Racun r in k.Racuni) if (r.Blokiran) suma++;
-                    if (suma > 0) {
-                        klijents.Add(k);
-                        break;
-                    }
-                }
-            return klijents;
+            throw new NotImplementedException();
         }
 
         public void DajKredit(Kredit kredit)
@@ -108,9 +98,6 @@ namespace Hypo_Banka
 
             return false;
         }
-
-
-
 
         #endregion
     }
