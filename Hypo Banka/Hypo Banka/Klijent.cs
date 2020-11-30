@@ -108,9 +108,20 @@ namespace Hypo_Banka
 
         public bool SkiniIznosSaNekogOdRačuna(double ukupniIznos)
         {
-            throw new NotImplementedException();
+            foreach (var racun in racuni)
+            {
+                if (racun.Blokiran == false && racun.StanjeRacuna >= ukupniIznos)
+                {
+                    racun.PromijeniStanjeRačuna("BANKAR12345", -1 * ukupniIznos);
+                    if (racun.StanjeRacuna == 0)
+                    {
+                        racun.Blokiran = true;
+                    }
+                    return true;
+                }
+            }
+            throw new InvalidOperationException("Svi racuni blokirani");
         }
-
         #endregion
     }
 }
