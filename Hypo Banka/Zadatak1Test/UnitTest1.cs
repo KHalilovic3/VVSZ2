@@ -102,5 +102,37 @@ namespace Zadatak1Test
             Assert.AreEqual(65, Convert.ToInt32(novac));
         }
 
+        [TestMethod]
+        public void TestAutomatskoGenerisanjePodataka1()
+        {
+            Klijent k = new Klijent();
+            k.Ime = "Homer";
+            k.Prezime = "Simpson";
+            
+            Tuple<string,string> t= k.AutomatskoGenerisanjePodataka();
+            var nk = k.KorisnickoIme;
+            var nl = k.Lozinka.Length;
+
+
+            byte[] data = System.Text.Encoding.ASCII.GetBytes("HSimpson1HSimpson1444$");
+            data = new System.Security.Cryptography.SHA256Managed().ComputeHash(data);
+            int tl = System.Text.Encoding.ASCII.GetString(data).Length;
+
+            Tuple<string, int> n1 = new Tuple<string, int>(nk,nl);
+            Tuple<string, int> n2 = new Tuple<string, int>("HSimpson1", tl);
+
+            Assert.AreEqual(n1,n2);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
+        public void TestAutomatskoGenerisanjePodataka2()
+        {
+            Klijent k = new Klijent();
+            k.Prezime = "Simpson";
+
+            Tuple<string, string> t = k.AutomatskoGenerisanjePodataka();
+        }
+
     }
 }

@@ -113,7 +113,9 @@ namespace Hypo_Banka
                 throw new ArgumentException("Ime ili prezime je neispravno!!");
             }
             KorisnickoIme = Ime.Substring(0, 1) + Prezime + "1";
-            Lozinka = KorisnickoIme;
+
+
+            Lozinka = KorisnickoIme+KorisnickoIme+"444$";
             return new Tuple<string, string>(KorisnickoIme, Lozinka);
         }
 
