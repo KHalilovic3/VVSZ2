@@ -20,7 +20,7 @@ namespace Unit_Testovi
 
             Kredit kredit = new Kredit(k, 50000, 1000, 0.05, DateTime.Now.AddYears(1));
 
-            IZahtjev zahtjev = new Zahtjev();
+            IZahtjev zahtjev = new ZamjenskiObjekat(kredit);
 
             b.OdobriKredit(zahtjev, kredit);
 
