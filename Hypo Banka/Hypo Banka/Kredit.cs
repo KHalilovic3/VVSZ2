@@ -99,8 +99,8 @@ namespace Hypo_Banka
         public string ProvjeriStanjeOtplate()
 
         {
-            return "Kredit koji se treba vratiti najkasnije na dan" + rokOtplate.Day + "." + rokOtplate.Month + "." + rokOtplate.Year + ". godine ima preostali iznos od "
-+ iznos * Math.Pow((1 + kamatnaStopa), rokOtplate.Year - 2020) + " KM. Iznos rate je " + rata + " KM, po stopi od " + kamatnaStopa * 100 + "%.";
+            return "Kredit koji se treba vratiti najkasnije na dan " + (rokOtplate.Day < 10 ? "0" : "") + rokOtplate.Day + "." + (rokOtplate.Month < 10 ? "0" : "") + rokOtplate.Month + "." + rokOtplate.Year + ". godine ima preostali iznos od "
++ iznos * Math.Pow((1 + kamatnaStopa), rokOtplate.Year - 2020) + " KM. Iznos rate je " + rata + " KM, po stopi od " + kamatnaStopa * 100 + " %.";
 
 
         }

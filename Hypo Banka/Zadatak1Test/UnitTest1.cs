@@ -59,5 +59,48 @@ namespace Zadatak1Test
             banka.KlijentiSBlokiranimRačunima();
         }
 
+
+        [TestMethod] 
+        [ExpectedException(typeof(ArgumentException))]
+        public void TestDajUkupanIznosNovcaNaSvimRačunimaIzuzetak() {
+
+            DateTime datum1= new DateTime(2010, 8, 18);
+            List<Racun> racuni = new List<Racun>();
+            Klijent Zoran = new Klijent();
+            var novac = Zoran.DajUkupanIznosNovcaNaSvimRačunima();
+        }
+
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
+        public void TestDajUkupanIznosNovcaNaSvimRačunimaSviBlokirani()
+        {
+
+            DateTime datum1 = new DateTime(2010, 8, 18);
+            List<Racun> racuni = new List<Racun>();
+            Klijent Zoran = new Klijent();
+            Racun r = new Racun(30.0);
+            r.PromijeniStanjeRačuna("BANKAR12345", -30.0);
+            r.Blokiran = true;
+            Zoran.Racuni.Add(r);
+            var novac = Zoran.DajUkupanIznosNovcaNaSvimRačunima();
+        }
+
+
+        [TestMethod]
+        public void TestDajUkupanIznosNovcaNaSvimRačunimaRacun()
+        {
+
+            DateTime datum1 = new DateTime(2010, 8, 18);
+            List<Racun> racuni = new List<Racun>();
+            Klijent Zoran = new Klijent();
+            Racun r = new Racun(30.0);
+            Racun r1 = new Racun(35.0);
+            Zoran.Racuni.Add(r);
+            Zoran.Racuni.Add(r1);
+            var novac = Zoran.DajUkupanIznosNovcaNaSvimRačunima();
+            Assert.AreEqual(65, Convert.ToInt32(novac));
+        }
+
     }
 }
