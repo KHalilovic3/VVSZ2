@@ -326,5 +326,134 @@ namespace Zadatak1Test
             r.Blokiran = blokiran;
         }
 
+        /*Testiranje pravilnog izvršavanje metode*/
+        [TestMethod]
+        public void TestOtvaranjeNovogRačuna1()
+        {
+            Banka b = new Banka();
+            Klijent k = new Klijent();
+            k.BrojLicneKarte ="123A456";
+            b.Klijenti.Add(k);
+
+            Racun r = new Racun(200);
+
+            b.OtvaranjeNovogRačuna(k, r);
+
+            Assert.AreEqual(k.Racuni[0], r);
+        }
+
+        /*Testiranje u slučaju kada klijent nije registrovan u banci*/
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentNullException))]
+        public void TestOtvaranjeNovogRačuna2()
+        {
+            Banka b = new Banka();
+            Klijent k = new Klijent();
+            k.BrojLicneKarte = "123A456";
+
+            Racun r = new Racun(200);
+
+            b.OtvaranjeNovogRačuna(k, r); 
+
+        }
+
+        /*Testiranje u slučaju kada klijent ima više od 3 računa*/
+        [TestMethod]
+        [ExpectedException(typeof(InvalidOperationException))]
+        public void TestOtvaranjeNovogRačuna3()
+        {
+            Banka b = new Banka();
+            Klijent k = new Klijent();
+            k.BrojLicneKarte = "123A456";
+            b.Klijenti.Add(k);
+
+            Racun r1 = new Racun(200);
+            Racun r2 = new Racun(300);
+            Racun r3 = new Racun(400);
+            Racun r4 = new Racun(500);
+
+            b.OtvaranjeNovogRačuna(k, r1);
+            b.OtvaranjeNovogRačuna(k, r2);
+            b.OtvaranjeNovogRačuna(k, r3);
+            b.OtvaranjeNovogRačuna(k, r4);
+        }
+
+        /*Testiranje pravilnog izvršavanje metode*/
+        [TestMethod]
+        public void TestDajKredit1()
+        {
+            Banka b = new Banka();
+            Klijent k = new Klijent();
+            k.BrojLicneKarte = "123A456";
+            b.Klijenti.Add(k);
+
+            Kredit kr = new Kredit(k, 500, 50, 0.05, new DateTime(2021, 5, 5));
+
+            b.DajKredit(kr);
+
+            Assert.AreEqual(b.Krediti[0], kr);
+        }
+
+        /*Testiranje slučaja kada ne postoji klijent u banci sa tim kreditom*/
+        [TestMethod]
+        [ExpectedException(typeof(InvalidOperationException))]
+        public void TestDajKredit2()
+        {
+            Banka b = new Banka();
+            Klijent k = new Klijent();
+            k.BrojLicneKarte = "123A456";
+            
+
+            Kredit kr = new Kredit(k, 500, 50, 0.05, new DateTime(2021, 5, 5));
+
+            b.DajKredit(kr);
+        }
+
+
+        /*Testiranje pravilnog izvršavanje metode*/
+        [TestMethod]
+        public void TestOdobriKredit1()
+        {
+            Banka b = new Banka();
+            Klijent k = new Klijent();
+            
+            k.BrojLicneKarte = "123A456";
+            b.Klijenti.Add(k);
+
+            Racun r = new Racun(5000);
+
+            b.OtvaranjeNovogRačuna(k, r);
+
+            Kredit kr = new Kredit(k, 500, 50, 0.05, new DateTime(2021, 5, 5));
+
+            IZahtjev zahtjev = new ZamjenskiObjekat(kr);
+
+            Assert.AreEqual(b.OdobriKredit(zahtjev, kr), true);
+        }
+
+        /*Testiranjeizvršavanje metode u slučaju da zahtjev nije povoljan*/
+        [TestMethod]
+        public void TestOdobriKredit2()
+        {
+            Banka b = new Banka();
+            Klijent k = new Klijent();
+             
+            k.BrojLicneKarte = "123A456";
+            b.Klijenti.Add(k);
+
+            Racun r = new Racun(10);
+
+            b.OtvaranjeNovogRačuna(k, r);
+
+            Kredit kr = new Kredit(k, 500, 50, 0.05, new DateTime(2021, 5, 5));
+
+            IZahtjev zahtjev = new ZamjenskiObjekat(kr);
+
+            Assert.AreEqual(b.OdobriKredit(zahtjev, kr), false);
+        }
+
+
+
+
     }
 }
