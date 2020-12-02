@@ -185,12 +185,21 @@ namespace Zadatak1Test
             {
                 return new[]
                 {
-                    new object[]{"h","Simp","HSimp1","lozinkalozinkalozinka42=",new DateTime(2000,05,05),"123H456"},
-                    new object[]{"Bart","s","BSimp1","lozinkalozinkalozinka1+",new DateTime(2000,05,05),"123B456"},
+                    new object[]{"","Simp","HSimp1","lozinkalozinkalozinka42=",new DateTime(2000,05,05),"123H456"},
+                    new object[]{null,"Simp","HSimp1","lozinkalozinkalozinka42=",new DateTime(2000,05,05),"123H456"},
+                    new object[]{"hhhhh","Simp","HSimp1","lozinkalozinkalozinka42=",new DateTime(2000,05,05),"123H456"},
+                    new object[]{"Bart","","BSimp1","lozinkalozinkalozinka1+",new DateTime(2000,05,05),"123B456"},
+                    new object[]{"Bart",null,"BSimp1","lozinkalozinkalozinka1+",new DateTime(2000,05,05),"123B456"},
+                    new object[]{"Bart","ssss","BSimp1","lozinkalozinkalozinka1+",new DateTime(2000,05,05),"123B456"},
                     new object[]{"Bob","Simp","","lozinkalozinkalozinka41-",new DateTime(2000, 05,05),"123I456"},
+                    new object[]{"Bob","Simp",null,"lozinkalozinkalozinka41-",new DateTime(2000, 05,05),"123I456"},
                     new object[]{"Lisa","Simp","LSimp1", "l4-", new DateTime(1999, 05, 05), "123L456" },
                     new object[]{"Marg","Simp","HSimp1", "lozinkalozinkalozinka41-", new DateTime(2020,05,05),"123M456"},
-                    new object[]{"Mike","Simp","HSimp1","lozinkalozinkalozinka41-",new DateTime(2000, 05,05),"123I46A"}
+                    new object[]{"Mike","Simp","HSimp1","lozinkalozinkalozinka41-",new DateTime(2000, 05,05),"123I46A"},
+                    new object[]{"Mike","Simp","HSimp1","lozinkalozinkalozinka41-",new DateTime(2000, 05,05),"123"},
+                    new object[]{"Mike","Simp","HSimp1","lozinkalozinkalozinka41-",new DateTime(2000, 05,05),"aaaaaaa"},
+                    new object[]{"Mike","Simp","HSimp1","lozinkalozinkalozinka41-",new DateTime(2000, 05,05),"123Iaaa"},
+                    new object[]{"Lar","Simp","HSimp1","lozinkalozinkalozinka41-",new DateTime(2200, 05,05),"123I456"}
                 };
             }
         }
@@ -252,9 +261,13 @@ namespace Zadatak1Test
                 return new[]
                 {
                     new object[]{new Klijent(), 100001.00, 50,0.05,new DateTime(2021,05,05)},
+                    new object[]{new Klijent(), -50, 50,0.05,new DateTime(2021,05,05)},
                     new object[]{new Klijent(),500, 4002.00, 0.01,new DateTime(2021,05,05)},
+                    new object[]{new Klijent(),500, -50, 0.01,new DateTime(2021,05,05)},
                      new object[]{new Klijent(),500, 50, 0.2,new DateTime(2021,05,05)},
-                    new object[]{new Klijent(),500,50,0.05,new DateTime(2040,05,05)}
+                     new object[]{new Klijent(),500, 50, 0.01,new DateTime(2021,05,05)},
+                    new object[]{new Klijent(),500,50,0.05,new DateTime(2040,05,05)},
+                     new object[]{new Klijent(),500,50,0.05,new DateTime(1900,05,05)}
                 };
             }
         }
