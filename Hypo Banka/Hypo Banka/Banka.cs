@@ -80,10 +80,8 @@ namespace Hypo_Banka
                 {
                     var suma = 0;
                     foreach (Racun r in k.Racuni) if (r.Blokiran) suma++;
-                    if (suma > 0) {
-                        klijents.Add(k);
-                        break;
-                    }
+                    if (suma > 0) klijents.Add(k);
+                   
                 }
             if (klijents.Count == 0) throw new InvalidOperationException("Nema nijedan klijent sa blokiranim računom");
 
