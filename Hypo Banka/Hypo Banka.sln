@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hypo Banka", "Hypo Banka\Hy
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Unit Testovi", "Unit Testovi\Unit Testovi.csproj", "{8CA80AF3-6889-474C-8E1D-F631B199AE94}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zadatak1Test", "Zadatak1Test\Zadatak1Test.csproj", "{6B4067E2-F1B6-4CA4-BFE4-2DD09289C207}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zadatak1-3Test", "Zadatak1Test\Zadatak1-3Test.csproj", "{6B4067E2-F1B6-4CA4-BFE4-2DD09289C207}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
