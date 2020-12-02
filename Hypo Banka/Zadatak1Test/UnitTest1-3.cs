@@ -3,10 +3,10 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
 
-namespace Zadatak1Test
+namespace Zadatak13Test
 {
     [TestClass]
-    public class UnitTest1
+    public class UnitTest13
     {
         [TestMethod]
         public void TestProvjeriStanjeOtplate1()
